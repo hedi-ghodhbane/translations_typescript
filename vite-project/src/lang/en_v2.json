@@ -1,0 +1,117 @@
+{
+    "counter": {
+      "title": "Counter",
+      "increment": {
+        "label": "Increment",
+        "ariaLabel": "Increment the counter value"
+      },
+      "decrement": {
+        "label": "Decrement",
+        "ariaLabel": "Decrement the counter value"
+      },
+      "reset": {
+        "label": "Reset",
+        "ariaLabel": "Reset the counter value"
+      },
+      "value": {
+        "label": "Value",
+        "ariaLabel": "Counter value"
+      },
+      "count": {
+        "label": "Count",
+        "ariaLabel": "Number of counts"
+      },
+      "add": {
+        "label": "Add",
+        "ariaLabel": "Add to the counter value"
+      },
+      "subtract": {
+        "label": "Subtract",
+        "ariaLabel": "Subtract from the counter value"
+      },
+      "increase": {
+        "label": "Increase",
+        "ariaLabel": "Increase the counter value"
+      },
+      "decrease": {
+        "label": "Decrease",
+        "ariaLabel": "Decrease the counter value"
+      },
+      "total": {
+        "label": "Total",
+        "ariaLabel": "Total count"
+      },
+      "current_count": {
+        "label": "Current count",
+        "ariaLabel": "Current count value"
+      },
+      "number_of_clicks": {
+        "label": "Number of clicks",
+        "ariaLabel": "Number of clicks value"
+      },
+      "quantity": {
+        "label": "Quantity",
+        "ariaLabel": "Quantity value"
+      },
+      "score": {
+        "label": "Score",
+        "ariaLabel": "Score value"
+      },
+      "tally": {
+        "label": "Tally",
+        "ariaLabel": "Tally count"
+      },
+      "aggregate": {
+        "label": "Aggregate",
+        "ariaLabel": "Aggregate count"
+      },
+      "running_total": {
+        "label": "Running total",
+        "ariaLabel": "Running total count"
+      },
+      "accumulated_total": {
+        "label": "Accumulated total",
+        "ariaLabel": "Accumulated total count"
+      },
+      "grand_total": {
+        "label": "Grand total",
+        "ariaLabel": "Grand total count"
+      },
+      "sum": {
+        "label": "Sum",
+        "ariaLabel": "Sum value"
+      },
+      "tally_counter": {
+        "label": "Tally counter",
+        "ariaLabel": "Tally counter value"
+      },
+      "hit_counter": {
+        "label": "Hit counter",
+        "ariaLabel": "Hit counter value"
+      },
+      "visitor_counter": {
+        "label": "Visitor counter",
+        "ariaLabel": "Visitor counter value"
+      },
+      "people_counter": {
+        "label": "People counter",
+        "ariaLabel": "People counter value"
+      },
+      "traffic_counter": {
+        "label": "Traffic counter",
+        "ariaLabel": "Traffic counter value"
+      },
+      "step_counter": {
+        "label": "Step counter",
+        "ariaLabel": "Step counter value"
+      },
+      "lap_counter": {
+        "label": "Lap counter",
+        "ariaLabel": "Lap counter value"
+      },
+      "time_counter": {
+        "label": "Time counter",
+        "ariaLabel": "Time counter value"
+      }
+    }
+}
