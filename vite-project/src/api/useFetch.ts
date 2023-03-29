@@ -1,7 +1,6 @@
 
-type Url = `/api/${string}`;
 
-const Urls:Record<string,Url> = {
+const Urls:Record<string,string> = {
     profile:'/api/profile',
     login:'/api/login'
 }
