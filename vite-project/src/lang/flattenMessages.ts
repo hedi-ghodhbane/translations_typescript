@@ -39,6 +39,20 @@ const nestedMessages = {
 
 
 // Extends in a generic type => constraint
-// type TailParams<T extends (...args:any)=>any> = T extends (arg0:any,...args:infer B) ? B : never;
+// export type TailParams<T extends (...args:any)=>any> = T extends (arg0:any,...args:infer B) ? B : never;
+
+
+// Indexed access type
+// type ExampleType = {
+//     'count':'count',
+//     'buttons':{
+//         'increment':'increment',
+//         'decrement':'decrement'
+//     }
+// }
+// type KeysExample = ExampleType[keyof ExampleType];
+// type KeysExample = ExampleType['buttons'][keyof ExampleType['buttons']];
+
+
 
 
