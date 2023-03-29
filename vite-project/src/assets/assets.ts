@@ -1,6 +1,5 @@
 
-type ImagePath = `/images/${string}.png`
-export const Paths:Record<string,ImagePath> = {
+export const Paths:Record<string,string> = {
     counterImage:'/images/counter.png',
     buttonBgImage:'/images/buttonBg.png',
 }
