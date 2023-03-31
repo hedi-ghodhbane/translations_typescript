@@ -1,11 +1,13 @@
 import { useIntl } from "react-intl";
 import {useState} from "react";
+import {JsonKeys} from "./lang/flattenMessages";
 const useTranslate = ()=>{
     const {formatMessage}=useIntl();
-    const t = (key:string)=>formatMessage({id:key});
+    const t = (key: JsonKeys)=>formatMessage({id:key});
+
     return {t};
 }
-type Position = `${'top' | 'bottom' |'center'}-${'left' | 'right'}`;
+
 export const Counter = ()=>{
     const [count,setCount]=useState(0);
     const {t}=useTranslate();

@@ -1,4 +1,4 @@
-// import en from './en.json';
+import en from './en.json';
 
 type MessageObject = {
     [key: string]: string | MessageObject;
@@ -18,28 +18,34 @@ export function flattenMessage(messages: MessageObject, prefix: string = '') {
 }
 
 
-const nestedMessages = {
-    'count': 'count',
-    'buttons':{
-        'increment': 'increment',
-        'decrement': 'decrement'
-    }
-}
+
 
 // Json Type / Index Signature / Recursion
 
+type Json = {
+    [key:string]: string | Json;
+}
 
-// Mapped Object Type // type Keys = 'name' | 'age'
+// Mapped Object Type //
+ type Keys = 'name' | 'age'
 
+// type Example = {
+//     [key in Keys] : string;
+// }
 
 // Conditional Types //
-// type Cond<T> = T extends number ? 'its-a-number' : 'its-not-a-number';
+type Cond<T> = T extends number ? 'its-a-number' : 'its-not-a-number';
+
 // type A = Cond<'2'>;
 
 
-
 // Extends in a generic type => constraint
-// export type TailParams<T extends (...args:any)=>any> = T extends (arg0:any,...args:infer B) ? B : never;
+// export type ExampleJson<T extends Json> = {
+//    [Key in keyof T]:......
+//  }
+
+// type Foo = ExampleJson<number>
+// ;
 
 
 // Indexed access type
@@ -50,9 +56,20 @@ const nestedMessages = {
 //         'decrement':'decrement'
 //     }
 // }
-// type KeysExample = ExampleType[keyof ExampleType];
-// type KeysExample = ExampleType['buttons'][keyof ExampleType['buttons']];
 
 
+const nestedMessages = {
+    'count': 'count',
+    'buttons':{
+        'increment': 'increment',
+        'decrement': 'decrement'
+    }
+}
+// count  | buttons.increment | buttons.decrement
+
+type KeyPaths<T extends Json> = {
+    [Key in keyof T]: T[Key] extends Json ? `${Key & string}.${KeyPaths<T[Key]> & string}` : Key;
+}[keyof T]
 
 
+export type JsonKeys= KeyPaths<typeof en> ;
